@@ -6,8 +6,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report, accuracy_score
 
-# Load the dataset
-dataframe = pd.read_csv('financial_data_with_tickers_knn.csv')
+# Load the dataset (run this statement only in a standalone script,
+# keep it commented out for PowerBI
+# dataframe = pd.read_csv('financial_data_with_tickers_knn.csv')
 
 # Separate the features and the target variable
 X = dataframe[['P/E Ratio', 'D/E Ratio']]  # Features
